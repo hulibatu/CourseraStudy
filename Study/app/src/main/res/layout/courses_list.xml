@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/circle_progress"/>
+
+    <include
+        android:id="@+id/failure"
+        layout="@layout/request_failure"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lv_courses_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"/>
+
+</RelativeLayout>

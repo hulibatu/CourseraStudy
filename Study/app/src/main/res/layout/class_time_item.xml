@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="60dp"
+              android:background="@drawable/white"
+              android:minHeight="60dp"
+              android:orientation="vertical">
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:includeFontPadding="true"
+        android:maxLines="1"
+        android:text="课程"
+        android:textColor="@drawable/black"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:includeFontPadding="true"
+        android:maxLines="1"
+        android:text="学习时间"
+        android:textColor="@drawable/black"
+        android:textSize="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="300dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/dialog_bg">
+
+    <RadioGroup
+        android:id="@+id/rg_select_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rbtn_all"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="-5dp"
+            android:paddingLeft="10dp"
+            android:text="全部"
+            android:textColor="@drawable/black"
+            android:textSize="25dp"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_languages"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="-5dp"
+            android:paddingLeft="10dp"
+            android:text="语言"
+            android:textColor="@drawable/black"
+            android:textSize="25dp"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_instructors"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="-5dp"
+            android:paddingLeft="10dp"
+            android:text="讲师"
+            android:textColor="@drawable/black"
+            android:textSize="25dp"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_universities"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="-5dp"
+            android:paddingLeft="10dp"
+            android:text="大学"
+            android:textColor="@drawable/black"
+            android:textSize="25dp"/>
+
+        <RadioButton
+            android:id="@+id/rbtn_type"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="-5dp"
+            android:paddingLeft="10dp"
+            android:text="类型"
+            android:textColor="@drawable/black"
+            android:textSize="25dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button"
+        android:text="确定"
+        android:textColor="@drawable/white"
+        android:textSize="25dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout
+    android:id="@+id/layout_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <com.study.view.circleimageview.CircleImageView
+            android:id="@+id/image_head"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/user_head"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15dp"
+            android:id="@+id/tv_nickname"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/layout_menu_head_tip"
+            android:textSize="15dp"
+            android:textColor="@drawable/gray"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_head"
+        android:background="@drawable/ltgray"
+        android:choiceMode="singleChoice"
+        android:divider="@drawable/black"
+        android:dividerHeight="1dp"/>
+
+</RelativeLayout>

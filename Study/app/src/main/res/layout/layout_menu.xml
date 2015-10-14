@@ -1,0 +1,32 @@
+<RelativeLayout
+    android:id="@+id/layout_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.study.view.circleimageview.CircleImageView
+        android:id="@+id/image_head"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/user_head"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"/>
+
+
+    <ListView
+        android:id="@+id/lv_menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_head"
+        android:layout_marginTop="10dp"
+        android:background="#cccc"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+
+</RelativeLayout>
+

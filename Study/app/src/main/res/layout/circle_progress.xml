@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:circleprogress="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+    <com.study.view.circleprogress.CircleProgress
+        android:id="@+id/circle_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        circleprogress:color1="@android:color/holo_red_light"
+        circleprogress:color2="@android:color/holo_green_light"
+        circleprogress:color3="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tv_circle_progress_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/circle_progress"
+        android:layout_toRightOf="@+id/circle_progress"
+        android:text="@string/circle_progress_tip"
+        android:textColor="@drawable/gray"
+        android:textSize="22dp"/>
+
+</RelativeLayout>
